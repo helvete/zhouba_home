@@ -4,4 +4,8 @@ Zhouba.cz Homepage
 
 ### Description
 
-TODO
+Simple valid HTML homepage for `zhouba.cz` hosted site.
+
+Contains links to hosted content.
+
+VCS simplifies the deployment process a lot.
