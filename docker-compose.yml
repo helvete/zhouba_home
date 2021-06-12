@@ -6,5 +6,7 @@ services:
       context: .
       dockerfile: ./docker/Dockerfile-nginx
     restart: always
+    volumes:
+      - /opt/storage:/htdocs/storage
     ports:
       - "43443:80"
