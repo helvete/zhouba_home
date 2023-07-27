@@ -7,3 +7,5 @@ run:
 
 stop:
 	docker-compose down
+
+.PHONY: run stop
