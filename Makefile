@@ -3,9 +3,9 @@
 main: run
 
 run:
-	docker-compose up --build --force-recreate -d
+	docker compose up --build --force-recreate -d
 
 stop:
-	docker-compose down
+	docker compose down
 
 .PHONY: run stop
