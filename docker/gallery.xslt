@@ -9,9 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
         img, video {
-            display: block;
-            max-width: 20cm;
-            max-height: 20cm;
+            display: inline;
+            width: 23%;
             margin: 2mm;
             vertical-align: bottom;
             image-orientation: from-image;
@@ -39,10 +38,13 @@
                     <video controls="" src="{.}" alt="{.}" title="{.}"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <img src="{.}" alt="{.}" title="{.}"/>
+                    <a href="{.}" title="click to enlarge">
+                        <img src="{.}" alt="{.}"/>
+                    </a>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
+		<br />
 		<a href='..'>←</a>
     </body>
     </html>
